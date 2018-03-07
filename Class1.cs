@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace LibraryProject
 {
@@ -7,6 +8,7 @@ namespace LibraryProject
     }
     public class Person
     {
+        [JsonIgnore]        
         public string Name{get;set;}
         public int Age{get;set;}
     }
